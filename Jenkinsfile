@@ -14,7 +14,7 @@ pipeline {
         stage('download terraform') {
             steps {
 		sh 'cd /opt'
-                sh 'sudo wget  https://releases.hashicorp.com/terraform/$terraform_version/terraform_terraform_version_linux_amd64.zip'
+                sh 'sudo wget  https://releases.hashicorp.com/terraform/$terraform_version/terraform_$terraform_version_linux_amd64.zip'
             }
         }		
    }
