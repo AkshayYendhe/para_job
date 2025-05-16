@@ -11,7 +11,7 @@ pipeline {
     stages {
         stage('Download Maven') {
             steps {
-                sh "cd /var/lib/jenkins/"
+                sh "cd /opt"
                 sh "sudo wget https://dlcdn.apache.org/maven/maven-3/${params.maven_version}/binaries/apache-maven-${params.maven_version}-bin.tar.gz"
             }
         }
