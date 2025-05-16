@@ -1,4 +1,5 @@
-#Inside script parameters block is asking for value for maven_version and terraform_version with some default value and description inside the stages downloading entered version of tool.
+// Inside script, parameters block asks for version of Maven and Terraform.
+// Downloads the specified versions of both tools.
 pipeline {
     agent any
 
